@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { mixins } from '../../styles/mixins'
+import { mixins } from '@/styles/mixins'
 
 export const Container = styled.header`
   max-width: 72.5rem;
