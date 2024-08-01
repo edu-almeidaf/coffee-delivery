@@ -2,6 +2,7 @@ import { useTheme } from 'styled-components'
 import { CoffeeList, Heading, Hero, HeroContent, Info } from './styles'
 import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 import { coffees } from '../../../data.json'
+import { Card } from '@/components/card'
 
 export function Home() {
   const theme = useTheme()
@@ -72,9 +73,7 @@ export function Home() {
 
         <div>
           {coffees.map((coffee) => (
-            <div key={coffee.id}>
-              <p>{coffee.title}</p>
-            </div>
+            <Card key={coffee.id} coffee={coffee} />
           ))}
         </div>
       </CoffeeList>
