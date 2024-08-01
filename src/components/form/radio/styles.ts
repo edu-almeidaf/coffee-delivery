@@ -8,6 +8,7 @@ export const Container = styled.label`
   align-items: center;
   gap: 0.75rem;
   border-radius: 6px;
+  cursor: pointer;
   border: 1px solid transparent;
   background-color: ${({ theme }) => theme.colors['base-button']};
   color: ${({ theme }) => theme.colors['base-text']};
