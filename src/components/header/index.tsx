@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { Aside, Container } from './styles'
 import { MapPin, ShoppingCart } from '@phosphor-icons/react'
+import { useCart } from '@/hooks/useCart'
 
 export function Header() {
-  const cart = '12'
+  const { cart } = useCart()
   return (
     <Container>
       <Link to="/">
